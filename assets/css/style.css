@@ -1,0 +1,16 @@
+h1{
+background-color:blue;
+font-style: oblique;
+}
+img{
+    width:300px;
+    height: 300px;
+}
+ul{
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+ol{
+    color: blueviolet;
+    background-color:aquamarine;
+}
