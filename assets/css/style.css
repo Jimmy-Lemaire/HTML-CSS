@@ -1,16 +1,23 @@
 h1{
-background-color:blue;
+background-color:burlywood;
 font-style: oblique;
 }
 img{
-    width:300px;
-    height: 300px;
+    width:250px;
+    height: 250px;
+    margin-left:25%;
+    border:2px solid black;
 }
 ul{
-    color: blueviolet;
-    background-color: antiquewhite;
+    list-style-position: inside;
 }
-ol{
-    color: blueviolet;
-    background-color:aquamarine;
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin: auto;
+    background-color: aliceblue;
 }

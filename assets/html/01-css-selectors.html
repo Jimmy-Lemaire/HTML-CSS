@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les sélecteurs CSS</title>
+    <link rel="stylesheet" href="../../assets/css/cours.css">
+</head>
+<body>
+<div class="container">
+    <h1>Les sélecteurs en CSS</h1>
+    <p>Les sélecteurs CSS permettent de cibler des éléments HTML afin de leur appliquer des styles. Voici les principaux types de sélecteurs :</p>
+    <h2>Sélecteur de type</h2>
+    <p>Il cible tous les éléments d'un certain type (balise).</p>
+    <pre><code>p {
+  color: blue;
+}</code></pre>
+    <h2>Sélecteur de classe</h2>
+    <p>Il cible tous les éléments ayant une classe spécifique.</p>
+    <pre><code>.important {
+  font-weight: bold;
+}</code></pre>
+    <h2>Sélecteur d'identifiant</h2>
+    <p>Il cible un élément unique avec un identifiant.</p>
+    <pre><code>#unique {
+  background: yellow;
+}</code></pre>
+    <h2>Sélecteur descendant</h2>
+    <p>Il cible les éléments à l'intérieur d'un autre élément.</p>
+    <pre><code>article p {
+  margin-left: 20px;
+}</code></pre>
+    <h2>Exemple pratique</h2>
+    <article>
+        <h3 class="important">Titre important</h3>
+        <p>Paragraphe simple.</p>
+        <p id="unique">Paragraphe unique.</p>
+    </article>
+    <p>Observe le rendu des styles appliqués ci-dessus.</p>
+    <hr>
+    <h1>Les sélecteurs avancés</h1>
+    <h2>Sélecteur descendant</h2>
+    <p>Le sélecteur descendant cible tous les éléments qui se trouvent à l'intérieur d'un autre élément, peu importe leur niveau d'imbrication.</p>
+    <pre><code>section p {
+  color: green;
+}</code></pre>
+    <section style="border:1px dashed #b0c4de; padding:10px; margin-bottom:16px;">
+      <h4>Section</h4>
+      <p>Paragraphe dans une section (ciblé).</p>
+      <div>
+        <p>Paragraphe dans un div dans une section (ciblé aussi).</p>
+      </div>
+    </section>
+
+    <h2>Sélecteur adjacent (A+B)</h2>
+    <p>Le sélecteur adjacent <code>A + B</code> cible l'élément <code>B</code> qui suit immédiatement l'élément <code>A</code> (ils doivent être au même niveau).</p>
+    <pre><code>h2 + p {
+  color: orange;
+  font-style: italic;
+}</code></pre>
+    <h2>Un titre</h2>
+    <p>Ce paragraphe est immédiatement après un h2 (ciblé).</p>
+    <div>
+      <h2>Un autre titre</h2>
+      <span>Un span (non ciblé)</span>
+      <p>Ce paragraphe n'est pas immédiatement après un h2 (non ciblé).</p>
+    </div>
+
+    <h2>Sélecteur d'attribut</h2>
+    <p>Le sélecteur d'attribut cible les éléments possédant un attribut ou une valeur d'attribut spécifique.</p>
+    <pre><code>a[target="_blank"] {
+  color: #0077cc;
+  text-decoration: underline wavy;
+}</code></pre>
+<a href="https://flukeout.github.io/" target="_blank" rel="noopener noreferrer">Lien Vers CSS Diner</a><br>
+    <a href="https://www.example.com" target="_blank">Lien ouvrant dans un nouvel onglet (ciblé)</a><br>
+    <a href="https://www.example.com">Lien normal (non ciblé)</a>
+</div>
+</body>
+</html>
