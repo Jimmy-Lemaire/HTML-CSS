@@ -7,5 +7,10 @@ body{
     background-image:url(../images/miammiammioum.jpg);
     background-repeat: no-repeat;
     float: left;
-    background-size: auto;
+    
+}
+h1{
+    margin: auto;
+    padding: auto;
+    background-color:blanchedalmond;
 }
