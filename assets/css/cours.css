@@ -94,6 +94,49 @@ a[target="_blank"] {
   text-decoration: underline wavy;
 }
 
+/* Exemples de gestion du texte */
+.exemple-font-size {
+  font-size: 2em;
+}
+
+.exemple-font-family {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.exemple-font-style {
+  font-style: italic;
+}
+
+.exemple-font-weight {
+  font-weight: bold;
+}
+
+.exemple-text-decoration {
+  text-decoration: underline wavy red;
+}
+
+.exemple-text-align {
+  text-align: center;
+}
+
+.exemple-float {
+  float: right;
+  width: 200px;
+  background: #e3e9f3;
+  margin: 0 0 12px 12px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+@font-face {
+  font-family: 'MaPolicePerso';
+  src: url('../../assets/fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+
+.exemple-font-face {
+  font-family: 'MaPolicePerso', cursive;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0 4vw 40px 4vw;

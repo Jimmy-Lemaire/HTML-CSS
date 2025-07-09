@@ -3,21 +3,47 @@ background-color:burlywood;
 font-style: oblique;
 }
 img{
-    width:250px;
+    width:300px;
     height: 250px;
     margin-left:25%;
     border:2px solid black;
 }
 ul{
     list-style-position: inside;
+    line-height:35px;
 }
 h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px; 
+    font-size: 50px;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cinzel-black,Arial, Helvetica, sans-serif;
     width: 50%;
     margin: auto;
-    background-color: aliceblue;
+    background-color: rgb(175, 210, 241);
+}
+.imgfloat{
+    float:right;
+    margin-right: 10%;
+}
+@font-face {
+    font-family: cinzel-black;
+    src: url(../fonts/Cinzel-Black.ttf);
+}
+p{
+    margin-top:3em;
+    margin-bottom: 3em ;
+}
+.présentation{
+    font-size:2em;
+    color: rgb(6, 105, 72);
+}
+.la-loose{
+    font-style: italic;
+    font-size: 20px;
+}
+.talents{
+    font-size: 30px;
+}
+h3{
+    text-decoration: underline;
 }

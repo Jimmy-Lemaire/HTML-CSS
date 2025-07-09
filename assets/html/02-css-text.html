@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer le texte en CSS</title>
+    <link rel="stylesheet" href="../../assets/css/cours.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gérer le texte en CSS</h1>
+    <p>CSS permet de contrôler l’apparence du texte de nombreuses façons. Voici les propriétés les plus courantes :</p>
+
+    <h2>font-size</h2>
+    <p>Définit la taille du texte.</p>
+    <pre><code>.exemple-font-size {
+  font-size: 2em;
+}</code></pre>
+    <p class="exemple-font-size">Texte en 2em</p>
+
+    <h2>font-family</h2>
+    <p>Définit la police utilisée.</p>
+    <pre><code>.exemple-font-family {
+  font-family: 'Courier New', Courier, monospace;
+}</code></pre>
+    <p class="exemple-font-family">Texte en Courier New</p>
+
+    <h2>font-style</h2>
+    <p>Permet de mettre le texte en italique.</p>
+    <pre><code>.exemple-font-style {
+  font-style: italic;
+}</code></pre>
+    <p class="exemple-font-style">Texte en italique</p>
+
+    <h2>font-weight</h2>
+    <p>Contrôle l’épaisseur du texte (gras, normal, etc.).</p>
+    <pre><code>.exemple-font-weight {
+  font-weight: bold;
+}</code></pre>
+    <p class="exemple-font-weight">Texte en gras</p>
+
+    <h2>text-decoration</h2>
+    <p>Ajoute une décoration (souligné, barré, etc.).</p>
+    <pre><code>.exemple-text-decoration {
+  text-decoration: underline wavy red;
+}</code></pre>
+    <p class="exemple-text-decoration">Texte souligné ondulé rouge</p>
+
+    <h2>text-align</h2>
+    <p>Aligne le texte horizontalement.</p>
+    <pre><code>.exemple-text-align {
+  text-align: center;
+}</code></pre>
+    <p class="exemple-text-align">Texte centré</p>
+
+    <h2>float</h2>
+    <p>Permet de faire flotter un élément à gauche ou à droite du flux normal.</p>
+    <pre><code>.exemple-float {
+  float: right;
+  width: 200px;
+  background: #e3e9f3;
+  margin: 0 0 12px 12px;
+  padding: 8px;
+  border-radius: 6px;
+}</code></pre>
+    <div style="overflow:auto; min-height:60px;">
+      <div class="exemple-float">Boîte flottante à droite</div>
+      <p>Ce texte s'écoule autour de la boîte flottante.</p>
+    </div>
+
+    <h2>@font-face</h2>
+    <p>Permet d’utiliser une police personnalisée.</p>
+    <pre><code>@font-face {
+  font-family: 'MaPolicePerso';
+  src: url('../../assets/fonts/IndieFlower-Regular.ttf') format('truetype');
+}
+.exemple-font-face {
+  font-family: 'MaPolicePerso', cursive;
+}</code></pre>
+    <p class="exemple-font-face">Texte avec une police personnalisée (si le fichier existe)</p>
+    <p style="font-size:0.9em; color:#888;">(Remplace le chemin par une vraie police si besoin)</p>
+</div>
+</body>
+</html>
