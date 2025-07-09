@@ -127,14 +127,39 @@ a[target="_blank"] {
   padding: 8px;
   border-radius: 6px;
 }
-
+/* règle CSS de la police */
 @font-face {
   font-family: 'MaPolicePerso';
-  src: url('../../assets/fonts/IndieFlower-Regular.ttf') format('truetype');
+  src: url('../fonts/IndieFlower-Regular.ttf') format('truetype');
 }
 
 .exemple-font-face {
   font-family: 'MaPolicePerso', cursive;
+}
+
+/* Exemples de gestion des couleurs */
+.exemple-color {
+  color: #e74c3c;
+}
+
+.exemple-bgcolor {
+  background-color: #f9e79f;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.exemple-hex {
+  color: #3498db;
+}
+
+.exemple-rgb {
+  color: rgb(46, 204, 113);
+}
+
+.exemple-rgba {
+  background-color: rgba(52, 152, 219, 0.3);
+  padding: 8px;
+  border-radius: 6px;
 }
 
 @media (max-width: 600px) {
