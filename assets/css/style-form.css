@@ -1,1 +1,11 @@
-style-form.css
+.formulaire{
+    font-size: 20px;
+}
+body{
+    margin-left: 25%;
+    padding: 2%;
+    background-image:url(../images/miammiammioum.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    background-size: auto;
+}

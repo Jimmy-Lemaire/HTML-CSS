@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+<link rel="stylesheet" href="../css/style-form.css">
 </head>
 <br>
     <h1>inscris toi à ce super site pour gagner tes croquettes!</h1>
     <h2>Inscription gratuite</h2>
     <br>
+    <div class="formulaire">
 <label for="nom">Nom de famille</label> </br>
 <input type="text" id="nom de famille" placeholder="Timsit"required> </br>
 <label for="Prénom">Prénom</label> </br>
@@ -22,15 +24,23 @@
 <label for="Pays">Pays</label> </br>
 <input type="text" id="Code postal" placeholder="France"required> </br>
 <label for="Date de naissance">Date de naissance</label> </br>
-<input type="date" id="Date de naissance" required> </br>
+<input type="date" id="Date de naissance" required> </br> </br>
+<form action="/action_page.php">
+  <label for="Sexe">Sexe</label>
+  <select name="Sexe" id="Sexe">
+    <option value="Masculin">Masculin</option>
+    <option value="Féminin">Féminin</option>
+    <option value="Autre">Autre</option>
+  </select>
 <form action="/action_page.php">
   <p><label for=Argumentaire>Dis nous pourquoi tu mérites ces croquettes</label></p>
-  <textarea id="Argumentaire" name="Argumenntaire" rows="4" cols="50"></textarea>
+  <textarea id="Argumentaire" name="Argumenntaire" rows="4" cols="50">A toi de jouer mon bon Patrick!</textarea>
   <br>
   <a href="login.html">
   <button type="button">Inscription</button>
 </a>
-
-    </form>
+</div>
+</form>
+<script src="../../main.js"></script>
 </body>
 </html>
