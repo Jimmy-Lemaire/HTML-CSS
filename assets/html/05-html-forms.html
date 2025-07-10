@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires HTML5</title>
+    <link rel="stylesheet" href="../../assets/css/cours.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Les formulaires en HTML5</h1>
+        <p>Les formulaires HTML permettent de collecter des données auprès des utilisateurs. HTML5 a introduit de nouveaux types de champs et des attributs de validation pour améliorer l'expérience utilisateur et la sécurité.</p>
+
+        <h2>Structure de base d’un formulaire</h2>
+        <pre><code>&lt;form action="traitement.php" method="post"&gt;
+        ...
+    &lt;/form&gt;</code></pre>
+        <ul>
+            <li><strong>action</strong> : URL où les données seront envoyées.</li>
+            <li><strong>method</strong> : "get" (données dans l’URL) ou "post" (données dans le corps de la requête, plus sécurisé).</li>
+        </ul>
+
+        <h2>Principaux types de champs &lt;input&gt;</h2>
+        <ul>
+            <li><strong>text</strong> : Champ de texte simple</li>
+            <li><strong>email</strong> : Adresse email (validation automatique)</li>
+            <li><strong>password</strong> : Mot de passe (texte masqué)</li>
+            <li><strong>number</strong> : Nombre (avec min, max, step)</li>
+            <li><strong>date</strong> : Date</li>
+            <li><strong>tel</strong> : Numéro de téléphone</li>
+            <li><strong>url</strong> : Adresse web</li>
+            <li><strong>checkbox</strong> : Case à cocher</li>
+            <li><strong>radio</strong> : Bouton radio</li>
+            <li><strong>file</strong> : Fichier à uploader</li>
+            <li><strong>range</strong> : Curseur de valeur</li>
+            <li><strong>color</strong> : Sélecteur de couleur</li>
+        </ul>
+
+        <h2>Exemple de formulaire complet</h2>
+        <form action="#" method="post" class="form-exemple">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="2" maxlength="30"><br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required><br><br>
+
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" id="mdp" name="mdp" required minlength="8" maxlength="20"><br><br>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+            <label for="date">Date de naissance :</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel" pattern="0[0-9]{9}" placeholder="0123456789"><br><br>
+
+            <label for="site">Site web :</label>
+            <input type="url" id="site" name="site" placeholder="https://votresite.com"><br><br>
+
+            <label>Sexe :</label>
+            <input type="radio" id="homme" name="sexe" value="homme" required> <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="sexe" value="femme"> <label for="femme">Femme</label><br><br>
+
+            <label for="newsletter">S'abonner à la newsletter :</label>
+            <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+            <label for="fichier">Photo de profil :</label>
+            <input type="file" id="fichier" name="fichier" accept="image/*"><br><br>
+
+            <label for="couleur">Couleur préférée :</label>
+            <input type="color" id="couleur" name="couleur"><br><br>
+
+            <label for="niveau">Niveau de satisfaction :</label>
+            <input type="range" id="niveau" name="niveau" min="0" max="10"><br><br>
+
+            <label for="message">Message ou commentaire :</label>
+            <textarea id="message" name="message" placeholder="Votre message..." required rows="4"></textarea><br><br>
+
+            <button type="submit" class="btn-form">Envoyer</button>
+        </form>
+
+        <h2>Validation et sécurité côté client</h2>
+        <ul>
+            <li><strong>required</strong> : Champ obligatoire</li>
+            <li><strong>min</strong> / <strong>max</strong> : Valeur minimale et maximale (pour number, date, range...)</li>
+            <li><strong>minlength</strong> / <strong>maxlength</strong> : Longueur minimale et maximale (pour text, password...)</li>
+            <li><strong>pattern</strong> : Expression régulière pour valider le format (ex : numéro de téléphone, mot de passe...)</li>
+        </ul>
+        <p><span class="important">Attention :</span> La validation HTML5 améliore la sécurité et l’expérience utilisateur, mais elle ne remplace jamais la validation côté serveur !</p>
+
+        <h3>Exemples d’attributs de validation</h3>
+        <pre><code>&lt;input type="text" required minlength="3" maxlength="20"&gt;
+&lt;input type="number" min="1" max="100"&gt;
+&lt;input type="email" required&gt;
+&lt;input type="password" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"&gt;
+</code></pre>
+        <ul>
+            <li><strong>pattern</strong> : Ici, le mot de passe doit contenir au moins une majuscule, un chiffre, et faire 8 caractères minimum.</li>
+        </ul>
+
+        <h2>Autres éléments de formulaire</h2>
+        <ul>
+            <li><strong>&lt;textarea&gt;</strong> : Zone de texte multiligne</li>
+            <li><strong>&lt;select&gt;</strong> : Liste déroulante</li>
+            <li><strong>&lt;button&gt;</strong> : Bouton (soumission, reset...)</li>
+        </ul>
+        <pre><code>&lt;textarea name="message" rows="4" cols="40" required&gt;&lt;/textarea&gt;
+&lt;select name="pays" required&gt;
+    &lt;option value="">--Choisissez--&lt;/option&gt;
+    &lt;option value="fr">France&lt;/option&gt;
+    &lt;option value="be">Belgique&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+        <h2>Bonnes pratiques</h2>
+        <ul>
+            <li>Utiliser <strong>label</strong> pour chaque champ (accessibilité)</li>
+            <li>Privilégier les nouveaux types d’input pour une meilleure expérience mobile</li>
+            <li>Ajouter des attributs de validation pour limiter les erreurs</li>
+            <li>Ne jamais se fier uniquement à la validation HTML côté client</li>
+            <li>Protéger les données côté serveur (vérification, filtrage, protection contre les injections...)</li>
+        </ul>
+
+        <hr>
+        <p>Pour aller plus loin, consultez la documentation officielle : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/form" target="_blank">MDN Web Docs - Formulaires HTML</a></p>
+    </div>
+</body>
+</html>
