@@ -276,7 +276,7 @@ a[target="_blank"] {
   background-color: #ffe066;
 }
 .exemple-bg-image {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-size: 80px 80px;
   background-repeat: no-repeat;
   background-position: center;
@@ -286,57 +286,126 @@ a[target="_blank"] {
   color: #fff;
 }
 .exemple-bg-repeat {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: repeat;
   background-size: 60px 60px;
 }
 .exemple-bg-no-repeat {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-size: 60px 60px;
   background-position: left top;
 }
 .exemple-bg-pos-center {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;
 }
 .exemple-bg-pos-right-bottom {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 60px 60px;
 }
 .exemple-bg-size-auto {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
 }
 .exemple-bg-size-cover {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .exemple-bg-size-contain {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 .exemple-bg-attachment-fixed {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .exemple-bg-attachment-scroll {
-  background-image: url('../images/drMario.png');
+  background-image: url('../images/miammiammioum.jpg');
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* --- Exemples visuels pour borders CSS --- */
+.exemple-border {
+  width: 320px;
+  height: 60px;
+  margin: 18px 0 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #f8f9fa;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px #0001;
+}
+.exemple-border-simple {
+  border: 2px solid #2a4d7a;
+}
+.exemple-border-dashed {
+  border-width: 4px;
+  border-style: dashed;
+  border-color: #e74c3c;
+}
+.exemple-border-individuelle {
+  border-top: 4px solid #3498db;
+  border-bottom: 4px dotted #e67e22;
+  border-left: none;
+  border-right: none;
+}
+.exemple-border-radius {
+  border: 2px solid #2a4d7a;
+  border-radius: 16px;
+}
+.exemple-border-outline {
+  border: 2px solid #fff;
+  outline: 3px dashed #b30000;
+}
+
+/* --- Styles pour la page audio/vidéo du cours --- */
+audio, video, iframe {
+  display: block;
+  margin: 22px auto 28px auto;
+  background: #f4f8fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  max-width: 100%;
+}
+
+.media-exemple {
+  background: #e3e9f3;
+  border-radius: 10px;
+  padding: 18px 12px;
+  margin: 18px auto 28px auto;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+}
+
+
+
+
+
+
+
+
+
+
+

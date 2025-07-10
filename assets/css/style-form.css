@@ -1,6 +1,10 @@
 .formulaire{
     
     font-size: 20px;
+    border: 2px,solid,black;
+    border-radius: 10px;
+    background-color: rgb(253, 213, 131);
+
 }
 body{
     margin-left: 25%;
@@ -8,14 +12,30 @@ body{
     background-image:url(../images/miammiammioum.jpg);
     background-repeat: no-repeat;
     float: left;
-    
+    background-attachment: scroll;
+    background-position:left;
 }
 h1{
     margin: auto;
     padding: auto;
     background-color:blanchedalmond;
+    border: 2px dashed chocolate
+}
+button{
+    background-color:rgb(165, 135, 108);
+    padding: 2px;
 }
 .button{
-    background-color:brown;
+    background-color:rgb(165, 135, 108);
     padding: 2px;
+}
+h2{
+    outline: 2px dashed;
+    width:200px;
+}
+.video{
+    margin: 5px;
+    position: right;
+    box-shadow: 20px 20px 20px;
+
 }
