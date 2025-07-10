@@ -1,58 +1,64 @@
 <!DOCTYPE html>
-<br lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-<link rel="stylesheet" href="../css/style-form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/style-form.css">
 </head>
-<br>
-    <h1>Inscris toi à ce super site pour gagner tes croquettes!</h1>
-    <h2>Inscription gratuite</h2>
-    <br>
-    <div class="formulaire">
-        <fieldset>
-            <legend>Informations personnelles</legend>
-<label for="nom">Nom de famille</label> </br>
-<input type="text" id="nom de famille" placeholder="Timsit"required> </br>
+<body>
 
-<label for="Prénom">Prénom</label> </br>
-<input type="text" id="Prénom" placeholder="Patrick"required> </br>
+  <h1>Inscris-toi à ce super site pour gagner tes croquettes !</h1>
+  <h2>Inscription gratuite</h2>
 
-<label for="Adresse">Adresse</label> </br>
-<input type="text" id="Adresse" placeholder="7 rue de la belle croquette"required> </br>
+  <div class="formulaire">
+    <form action="/action_page.php" method="post">
+      <fieldset>
+        <legend>Informations personnelles</legend>
 
-<label for="Code postal">Code postal</label> </br>
-<input type="number" id="Code postal" maxlength="99999"required> </br>
+        <label for="nom">Nom de famille</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Timsit" required><br>
 
-<label for="Ville">Ville</label> </br>
-<input type="Text" id="Ville" placeholder="Dijon"required> </br>
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="prenom" name="prenom" placeholder="Patrick" required><br>
 
-<label for="Pays">Pays</label> </br>
-<input type="text" id="Code postal" placeholder="France"required> </br>
+        <label for="adresse">Adresse</label><br>
+        <input type="text" id="adresse" name="adresse" placeholder="7 rue de la belle croquette" required><br>
 
-<label for="Date de naissance">Date de naissance</label> </br>
-<input type="date" id="Date de naissance" required> </br> </br>
+        <label for="code_postal">Code postal</label><br>
+        <input type="number" id="code_postal" name="code_postal" required><br>
 
-<form action="/action_page.php">
-  <label for="Sexe">Sexe</label>
-  <select name="Sexe" id="Sexe">
-    <option value="Masculin">Masculin</option>
-    <option value="Féminin">Féminin</option>
-    <option value="Autre">Autre</option>
-  </select>
-  </fieldset>
+        <label for="ville">Ville</label><br>
+        <input type="text" id="ville" name="ville" placeholder="Dijon" required><br>
 
-  <form action="/action_page.php">
-  <p><label for=Argumentaire>Dis nous pourquoi tu mérites ces croquettes</label></p>
-  <textarea id="Argumentaire" name="Argumenntaire" rows="4" cols="50">A toi de jouer mon bon Patrick!</textarea>
-  <br>
-  <a href="login.html">
-  <button type="button">Inscription</button>
-</a>
-</div>
-</form>
-<p><a href="login.html">Retour à la page de connexion</a></p>
-<script src="../../main.js"></script>
+        <label for="pays">Pays</label><br>
+        <input type="text" id="pays" name="pays" placeholder="France" required><br>
+
+        <label for="naissance">Date de naissance</label><br>
+        <input type="date" id="naissance" name="naissance" required><br>
+      </fieldset>
+
+      <br>
+
+      <label for="sexe">Sexe</label><br>
+      <select id="sexe" name="sexe">
+        <option value="Masculin">Masculin</option>
+        <option value="Féminin">Féminin</option>
+        <option value="Autre">Autre</option>
+      </select>
+
+      <br><br>
+
+      <label for="argumentaire">Dis-nous pourquoi tu mérites ces croquettes</label><br>
+      <textarea id="argumentaire" name="argumentaire" rows="4" cols="50">A toi de jouer mon bon Patrick !</textarea>
+
+      <br><br>
+      <input type="submit" value="Inscription">
+    </form>
+
+    <p><a href="login.html">Retour à la page de connexion</a></p>
+  </div>
+
+  <script src="../../main.js"></script>
 </body>
 </html>
