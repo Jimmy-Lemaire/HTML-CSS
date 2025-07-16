@@ -1,6 +1,8 @@
 h1{
 background-color:burlywood;
 font-style: oblique;
+transition-property: background-color, transform;
+transition-duration: 0.2s;
 }
 img{
     width:300px;
@@ -46,4 +48,69 @@ p{
 }
 h3{
     text-decoration: underline;
+}
+h1:hover{
+background-color: blanchedalmond;
+transform: scale(1.5);
+}
+@keyframes georgesEnFolie {
+    0%{
+        border-radius: 0px;
+        transform: skewY(10deg);
+        transform: skewX(20deg);
+        
+    }
+    10%{
+        border-radius: 20px;
+        transform: skewY(15deg);
+        transform: skewX(40deg);
+
+
+    
+}
+30%{
+    border-radius: 30px;
+    transform: skewY(5deg);
+    transform: skewX(60deg);
+    box-shadow: 15px;
+
+
+}
+60%{
+    border-radius: 50px;
+    transform: skewY(-5deg);
+    transform: skewX(50deg);
+    box-shadow: 20px;
+
+
+}
+70%{
+    border-radius: 20px;
+    transform: skewY(-15deg);
+    transform: skewX(27deg);
+    box-shadow: 5px;
+
+
+}
+80%{
+    border-radius: 10px;
+    transform: skewY(-5deg);
+    transform: skewX(20deg);
+    box-shadow: -5px;
+
+
+}
+100%{
+    border-radius: 0px;
+    transform: skewY(0deg);
+    transform: skewX(0deg);
+    box-shadow: 0px;
+
+}
+}
+
+img:hover{
+    animation-name: georgesEnFolie;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
