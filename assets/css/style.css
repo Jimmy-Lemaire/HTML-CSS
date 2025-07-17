@@ -56,61 +56,39 @@ transform: scale(1.5);
 @keyframes georgesEnFolie {
     0%{
         border-radius: 0px;
-        transform: skewY(10deg);
-        transform: skewX(20deg);
-        
+        transform: skewY(10deg) skewX(20deg) scale(1) rotate(0deg)
     }
     10%{
         border-radius: 20px;
-        transform: skewY(15deg);
-        transform: skewX(40deg);
-
-
-    
-}
+        transform: skewY(15deg) skewX(40deg) scale(1.2) rotate(20deg);
+    }  
 30%{
     border-radius: 30px;
-    transform: skewY(5deg);
-    transform: skewX(60deg);
-    box-shadow: 15px;
-
+    transform:skewY(5deg) skewX(60deg) scale(1.4) rotate(60deg);
 
 }
 60%{
     border-radius: 50px;
-    transform: skewY(-5deg);
-    transform: skewX(50deg);
-    box-shadow: 20px;
-
-
+    transform: skewY(-5deg) skewX(50deg) scale(1.6) rotate(120deg);
 }
 70%{
     border-radius: 20px;
-    transform: skewY(-15deg);
-    transform: skewX(27deg);
-    box-shadow: 5px;
-
-
+    transform: skewY(-15deg) skewX(27deg) scale(1.4) rotate(220deg);
 }
 80%{
     border-radius: 10px;
-    transform: skewY(-5deg);
-    transform: skewX(20deg);
-    box-shadow: -5px;
-
-
+    transform: skewY(-5deg) skewX(20deg) scale(1.2) rotate(280deg);
 }
 100%{
     border-radius: 0px;
-    transform: skewY(0deg);
-    transform: skewX(0deg);
-    box-shadow: 0px;
-
+    transform: skewY(0deg) skewX(0deg) scale(1) rotate(360deg);
 }
 }
 
 img:hover{
     animation-name: georgesEnFolie;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* animation: georgesEnFolie 2s infinite; */
 }
